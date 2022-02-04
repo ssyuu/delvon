@@ -1,0 +1,124 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+    background: url(./HOME/bghome.GIF);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:Haettenschweiler;
+    color:burlywood;
+    z-index: -1;
+}
+div img{
+    display: block;
+    margin: 2rem auto;
+}
+
+/*main section*/
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: 0 auto 0 auto;
+    margin-top: 25%;
+    justify-content: center;
+}
+
+body::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 190%;
+    width: 100%;
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: .4;
+    z-index: -1;
+}
+#main h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 1s ease forwards;
+}
+#main h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(245, 222, 179);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+a{
+    text-decoration: none;
+}
+#main .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    margin-left: 15%;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#main .cta:hover{
+    color: rgba(235, 159, 19, 0.5);
+    background-color: rgba(235, 159, 19, 0.5);
+}
+/*End Main Section*/
+
+/*Keyframes*/
+@keyframes text_reveal_box{
+   50% {
+       width: 100%;
+       left: 0;
+   } 
+   100% {
+       width: 0;
+       left: 100%;
+   }
+}
+@keyframes text_reveal{
+    100%{
+        color: wheat;
+    }
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: rgb(250, 248, 248);
+}
+
+.footer .socialcontact a{
+    display: inline-block;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 5px 10px 10px 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer .socialcontact a:hover{
+    color: #24262b;
+    background-color: white;
+}

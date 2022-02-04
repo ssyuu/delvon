@@ -1,0 +1,176 @@
+body{
+    background: url(CAFES/bgcafe.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: papyrus;
+    margin: auto;
+}
+
+div img{
+    display: block;
+    margin: 2rem auto;
+}
+
+.platform{
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.platform h1{
+    font-size: 1.5rem;
+    color: black;
+    padding: 2rem;
+    margin-top: 10%;
+    word-spacing: 2rem;
+}
+
+
+span{
+    color: white;
+}
+
+.sub-slider-frame{
+    background: rgba(0, 0, 0, 0.6);
+    text-align: justify;
+    border-spacing: 5px;
+    word-spacing: 3.px;
+    padding: 15px;
+    color: white;
+    margin: 5%;
+    border: 10px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.sub-slider-frame h2{
+    color: rgb(255, 124, 17)
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 422px;
+    width: 800x;
+    margin-left: 0px;
+    margin-top: 60px;
+}
+
+.slide-images{
+    width: 15000px;
+    height: 422px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 25s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container{
+    height: 422px;
+    width: 700px;
+    position: relative;
+    float: left;  
+}
+
+.sub-slider-frame2{
+    background: rgba(0, 0, 0, 0.6);
+    text-align: justify;
+    border-spacing: 5px;
+    word-spacing: 3.px;
+    padding: 15px;
+    color: white;
+    border: 10px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 5% 5%;
+}
+
+.sub-slider-frame2 h2{
+    color: white;
+}
+
+table, th, td {
+    border: 3px solid #995200;
+    margin: 0 auto 0 auto;
+    padding: 2px;
+   }
+
+.slider-frame2{
+    overflow: hidden;
+    height: 422px;
+    width: 800x;
+    margin-left: 0px;
+    margin-top: 60px;
+}
+
+.slide-images2{
+    width: 15000px;
+    height: 422px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 25s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container2{
+    height: 422px;
+    width: 700px;
+    position: relative;
+    float: left;  
+}
+
+@-webkit-keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 1200px;}
+    30% {left: 1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0;}
+    90% {left: 0;}
+    100% {left: 0;}
+}
+
+@media screen and (max-width: 600px){
+    .platform h1{
+        font-size: 2rem;
+    }
+    .platform{
+        font-size: 0.7rem;
+    }
+}
+
+ .footer{
+    text-align: center;
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    color: rgb(250, 248, 248);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer .socialcontact a{
+    display: inline-block;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 5px 10px 10px 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer .socialcontact a:hover{
+    color: #24262b;
+    background-color: white;
+}

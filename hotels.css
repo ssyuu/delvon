@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("./HOTELS/bghotel.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:Poppin;
+    color:rgb(0, 0, 0);
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-attachment: fixed;
+    background-color: black;
+    background-size: cover;
+    height: 1020%;
+    width: 100%;
+    opacity: .5;
+    z-index: -1;
+}
+
+div img{
+    display: block;
+    margin: 2rem auto;
+}
+
+
+.slider-perak{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    left: 40%;
+    padding: 10%;
+}
+
+.slider-perak span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider-perak span img{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 2s;
+}
+
+.slider-perak span:hover img{
+    transform: translateY(-30px) scale(1.2);
+
+    
+}
+
+
+.slider-penang{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    left: 40%;
+    padding: 10%;
+}
+
+.slider-penang span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider-penang span img{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 2s;
+}
+
+.slider-penang span:hover img{
+    transform: translateY(-30px) scale(1.2);
+
+    
+}
+
+.slider-kedah{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    left: 40%;
+    padding: 10%;
+}
+
+.slider-kedah span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider-kedah span img{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 2s;
+}
+
+.slider-kedah span:hover img{
+    transform: translateY(-30px) scale(1.2);
+
+    
+}
+
+.slider-sembilan{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    left: 40%;
+    padding: 10%;
+}
+
+.slider-sembilan span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider-sembilan span img{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 2s;
+}
+
+.slider-sembilan span:hover img{
+    transform: translateY(-30px) scale(1.2);
+
+    
+}
+
+.slider-kl{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    left: 40%;
+    padding: 10%;
+}
+
+.slider-kl span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider-kl span img{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 2s;
+}
+
+.slider-kl span:hover img{
+    transform: translateY(-30px) scale(1.2);
+
+    
+}
+
+table{
+
+    background-color: rgb(167,147,122);
+    margin:0 auto;
+    font-size: 19px;
+    width: 820px;
+    height: 600px;
+    text-align: center;
+   }
+
+
+
+@keyframes rotate{
+    0%{
+        transform:perspective(1200x) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1200px) rotateY(360deg);
+    }
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: rgb(250, 248, 248);
+}
+
+.footer .socialcontact a{
+    display: inline-block;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 5px 10px 10px 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer .socialcontact a:hover{
+    color: #24262b;
+    background-color: white;
+}
