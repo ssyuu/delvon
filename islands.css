@@ -4,7 +4,7 @@
     box-sizing: border-box;
  }
  body{
-     background: url("./ISLANDS/background.jpg");
+     background: url("./ISLAND/background.jpg");
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-size: cover;
