@@ -20,7 +20,7 @@ body::after{
     background-attachment: fixed;
     background-color: rgba(138, 31, 106, 0.363);
     background-size: cover;
-    height: 640%;
+    height: 624%;
     width: 100%;
     opacity: .5;
     z-index: -1;
