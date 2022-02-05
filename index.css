@@ -11,6 +11,19 @@ body{
     font-family:Haettenschweiler;
     color:burlywood;
 }
+body::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 190%;
+    width: 100%;
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: .4;
+    z-index: -1;
+}
 div img{
     display: block;
     margin: 2rem auto;
