@@ -10,7 +10,6 @@ body{
     background-size: cover;
     font-family:Haettenschweiler;
     color:burlywood;
-    z-index: -1;
 }
 div img{
     display: block;
@@ -27,19 +26,6 @@ div img{
     margin-top: 25%;
     justify-content: center;
 }
-
-body::after{
-    content:'';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 190%;
-    width: 100%;
-    background-color: black;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: .4;
-    z-index: -1;
 }
 #main h1{
     display: block;
