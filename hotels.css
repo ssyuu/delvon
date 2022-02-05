@@ -11,19 +11,6 @@ body{
     font-family:Poppin;
     color:rgb(0, 0, 0);
 }
-body::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0px;
-    background-attachment: fixed;
-    background-color: black;
-    background-size: cover;
-    height: 1020%;
-    width: 100%;
-    opacity: .5;
-    z-index: -1;
-}
 
 div img{
     display: block;
