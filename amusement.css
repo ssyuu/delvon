@@ -9,22 +9,10 @@ body{
     background-size: cover;
     background-attachment: fixed;
     font-family:Poppin;
-    color:rgb(228, 205, 228);
- 
+    color:rgb(228, 205, 228); 
 }
-body::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0px;
-    background-attachment: fixed;
-    background-color: rgba(138, 31, 106, 0.363);
-    background-size: cover;
-    height: 624%;
-    width: 100%;
-    opacity: .5;
-    z-index: -1;
-}
+
+
 div img{
     display: block;
     margin: 2rem auto;
