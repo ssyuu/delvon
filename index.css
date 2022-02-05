@@ -10,6 +10,7 @@ body{
     background-size: cover;
     font-family:Haettenschweiler;
     color:burlywood;
+    z-index: -1;
 }
 
 div img{
